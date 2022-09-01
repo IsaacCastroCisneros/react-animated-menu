@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* *
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} */
+body
+{
+    background-color: rgb(5, 5, 29);
+    color: #fff;
+    height: 100vh;
+}
+
+.yoContainer
+{
+    transition: ease-in-out 500ms;
+    top: 50%;
+    left: 0;
+    transform:translate(0,-50%);
+}
+
+.yoContainer.active
+{
+    transform: translate(-50%,-50%);
+}
+
+.menu-container
+{
+    transition: ease-in-out 500ms;
+}
